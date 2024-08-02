@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nettracking</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg_color: '#12141D',
+            content_bg: '#1D1F29',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-['Inter'] max-w-[1170px] mx-auto bg-bg_color">
+
+  <!-- Header -->
+  <header>
+    <nav class="flex items-center justify-between lg:justify-normal h-[80px] mx-5 xl:mx-0">
+      <!-- Name & Logo -->
+      <div class="flex items-center gap-2 lg:mr-20">
+        <h1 class="text-white font-bold leading-[30px] tracking-[-0.32px]">Nettracking</h1>
+        <img src="./Images/night_mode.png" alt="Nettracking Logo">
+      </div>
+      
+      <!-- Links -->
+      <ul class="hidden md:flex items-center gap-4 lg:gap-[34px] text-white/60 text-[13px] font-medium tracking-[-0.13px] lg:flex-1">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Knowledge base</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      
+      <!-- Buttons -->
+      <div class="hidden md:flex items-center gap-[18px] text-[13px] font-semibold tracking-[-0.13px]">
+        <button class="bg-content_bg px-4 py-[10px] rounded text-white">Sign in</button>
+        <button class="bg-white px-4 py-[10px] rounded text-bg_color">Sign up</button>
+      </div>
+      
+      <!-- Hamburger Menu -->
+      <button class="w-6 h-[18px] cursor-pointer md:hidden" aria-label="Open menu">
+        <img src="./Images/menu.png" alt="Menu">
+      </button>
+    </nav>
+  </header>
+  
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section>
+      <div>
+        
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+
+</body>
+</html>
