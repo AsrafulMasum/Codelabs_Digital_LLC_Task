@@ -35,7 +35,7 @@
 
   <!-- Header -->
   <header class="fixed top-0 w-full">
-    <nav class="max-w-[1170px] w-full flex items-center justify-between lg:justify-normal h-[80px] mx-5 lg:mx-auto">
+    <nav class="max-w-[1170px] w-full flex items-center justify-between lg:justify-normal h-[80px] mx-auto px-5 min-[1170px]:px-0">
 
       <!-- Name & Logo -->
       <div class="flex items-center gap-2 lg:mr-20">
@@ -70,7 +70,9 @@
   <main class="max-w-[1170px] mx-auto pt-20">
     <!-- Hero -->
     <section class="mb-[100px] relative">
-      <div class="hidden lg:block absolute top-[154px] left-[218px] w-[366px] h-[366px] bg-[#FF1B0033] bg-opacity-20 blur-[250px]"></div>
+      <div
+        class="hidden lg:block absolute top-[154px] left-[218px] w-[366px] h-[366px] rounded-[366px] bg-[#FF1B0033] bg-opacity-20 blur-[250px]">
+      </div>
       <div class="mt-[60px] text-center">
         <h2 class="text-white text-[42px] font-bold leading-[46px] tracking-[-1.05px] text-center"> Content marketing
           solution & <br> idea of your business</h2>
@@ -99,7 +101,7 @@
 
       <!-- content -->
       <div
-        class="bg-content_bg h-[611px] mt-[100px] rounded-[20px] px-[100px] py-20 grid grid-cols-3 gap-x-[110px] gap-y-[65px]">
+        class="bg-content_bg min-h-[611px] mt-[100px] rounded-[20px] min-[1170px]:px-[100px] py-20 grid grid-cols-2 lg:grid-cols-3 gap-x-[110px] gap-y-[65px]">
         <!-- featured cards -->
         <div class="w-[250px]">
           <img src="./Images/book.png" alt="">
@@ -158,8 +160,8 @@
 
       <!-- content -->
       <div class="mt-[84px] mb-[62px] grid grid-cols-2 gap-5">
-        <div class="bg-content_bg flex-1 pt-[40px] pl-[50px] rounded-[20px] max-h-[539px]">
-          <div class="flex items-center gap-3 mb-[90px]">
+        <div class="bg-content_bg flex-1 pt-[40px] pl-[50px] rounded-[20px] max-h-[539px] flex flex-col justify-between">
+          <div class="flex items-center gap-3">
             <div class="px-4 pt-[11px] pb-3 bg-[#4F5054] rounded-md">
               <p class="text-sm font-semibold text-white tracking-[-0.14px]">Founder</p>
             </div>
@@ -173,15 +175,18 @@
               <p class="text-sm font-semibold text-white tracking-[-0.14px]">Agency</p>
             </div>
           </div>
-          <h2 class="capitalize text-[30px] font-semibold leading-[36px] tracking-[-0.3px] text-white">Track the results of <br>
-            your work</h2>
-          <p class="text-[#696B76] leading-[24px] tracking-[-0.32px] mt-4 max-w-[380px]">
-            The tracking system sends customers notifications on shipping date status, shipping notification, delivery
-            confirmation, package delivered with time and date, etc.
-          </p>
-          <button
-            class="flex items-center gap-2 text-white bg-primary text-sm font-semibold tracking-[-0.14px] py-[14px] px-[30px] rounded-lg mt-10 mb-[100px]">Explore
-            Platform <img class="w-2 h-2" src="./Images/icon.png" alt=""></button>
+          <div>
+            <h2 class="capitalize text-[30px] font-semibold leading-[36px] tracking-[-0.3px] text-white">Track the
+              results of <br>
+              your work</h2>
+            <p class="text-[#696B76] leading-[24px] tracking-[-0.32px] mt-4 max-w-[380px]">
+              The tracking system sends customers notifications on shipping date status, shipping notification, delivery
+              confirmation, package delivered with time and date, etc.
+            </p>
+            <button
+              class="flex items-center gap-2 text-white bg-primary text-sm font-semibold tracking-[-0.14px] py-[14px] px-[30px] rounded-lg mt-10 mb-[30px] md:mb-12 min-[1170]:mb-[100px]">Explore
+              Platform <img class="w-2 h-2" src="./Images/icon.png" alt=""></button>
+          </div>
         </div>
         <img class="w-[575px]" src="./Images/chat.png" alt="">
       </div>
